@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[{"pass":"123456789","name":"mohamed","id":4,"email":"mhmdsamir92@gmail.com","lat":0.0,"long":0.0}]]>
+    </line>
+    <line>
+      <![CDATA[{"pass":"123456789","name":"mohamed","id":4,"email":"mhmdsamir92@gmail.com","lat":0.0,"long":0.0}]]>
+    </line>
+    <line>
+      <![CDATA[{"pass":"punk123","name":"Clint Eastwood","id":8,"email":"clint@getoffmylawn.com","lat":0.0,"long":0.0}]]>
+    </line>
+    <line>
+      <![CDATA[{"pass":"punk123","name":"Clint Eastwood","id":8,"email":"clint@getoffmylawn.com","lat":0.0,"long":0.0}]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="296" started-at="2016-05-06T00:25:34Z" finished-at="2016-05-06T00:25:34Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="296" started-at="2016-05-06T00:25:34Z" finished-at="2016-05-06T00:25:34Z">
+      <class name="com.services.ServicesTestClass">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.services.ServicesTestClass@20e2cbe0]" name="initialize" is-config="true" duration-ms="9" started-at="2016-05-06T02:25:34Z" finished-at="2016-05-06T02:25:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="testLoginService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.services.ServicesTestClass@20e2cbe0]" name="testLoginService" duration-ms="232" started-at="2016-05-06T02:25:34Z" data-provider="loginSet" finished-at="2016-05-06T02:25:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mhmdsamir92@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"pass":"123456789","name":"mohamed","id":4,"email":"mhmdsamir92@gmail.com","lat":0.0,"long":0.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[{"pass":"123456789","name":"mohamed","id":4,"email":"mhmdsamir92@gmail.com","lat":0.0,"long":0.0}]]>
+            </line>
+            <line>
+              <![CDATA[{"pass":"123456789","name":"mohamed","id":4,"email":"mhmdsamir92@gmail.com","lat":0.0,"long":0.0}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLoginService -->
+        <test-method status="PASS" signature="testLoginService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.services.ServicesTestClass@20e2cbe0]" name="testLoginService" duration-ms="14" started-at="2016-05-06T02:25:34Z" data-provider="loginSet" finished-at="2016-05-06T02:25:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[clint@getoffmylawn.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[punk123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"pass":"punk123","name":"Clint Eastwood","id":8,"email":"clint@getoffmylawn.com","lat":0.0,"long":0.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[{"pass":"punk123","name":"Clint Eastwood","id":8,"email":"clint@getoffmylawn.com","lat":0.0,"long":0.0}]]>
+            </line>
+            <line>
+              <![CDATA[{"pass":"punk123","name":"Clint Eastwood","id":8,"email":"clint@getoffmylawn.com","lat":0.0,"long":0.0}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLoginService -->
+        <test-method status="PASS" signature="testLoginService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.services.ServicesTestClass@20e2cbe0]" name="testLoginService" duration-ms="18" started-at="2016-05-06T02:25:34Z" data-provider="loginSet" finished-at="2016-05-06T02:25:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[noemail@xyz.abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nopass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginService -->
+        <test-method status="PASS" signature="testLoginService(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.services.ServicesTestClass@20e2cbe0]" name="testLoginService" duration-ms="12" started-at="2016-05-06T02:25:34Z" data-provider="loginSet" finished-at="2016-05-06T02:25:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[clint@getoffmylawn.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[peeppop]]>
+              </value>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginService -->
+      </class> <!-- com.services.ServicesTestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
