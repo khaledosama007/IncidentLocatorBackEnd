@@ -155,4 +155,27 @@ public class ReportModel {
 		return null;
 		
 	}
+	public static boolean increasePriority(int reportId) throws SQLException{
+		ReportModel model = new ReportModel();
+		Connection conn = DBConnection.getActiveConnection();
+		String Sql = "Select * From `report` Where `report_id` = ?";
+		PreparedStatement stmt = conn.prepareStatement(Sql);
+		stmt.setInt(1, reportId);
+		ResultSet rs = stmt.executeQuery();
+		if(!rs.next()){
+			String updateSql = "Update `report` Set `priority` = `priority` + 1 Where `report_id` = ?";
+			stmt = conn.prepareStatement(updateSql);
+			stmt.setInt(1, reportId);
+			 int status =stmt.executeUpdate();
+			if(status != 0){
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+		else {
+			return false;
+		}
+	}
 }

@@ -43,7 +43,7 @@ public class Services {
 			json.put("type" , user.getType());
 			json.put("phoneNumber", user.getPhoneNumber());
 			json.put("verified", user.getVerified());
-			
+			json.put("operation", "done");
 			return json.toJSONString();			
 		}else {
 			JSONObject json = new JSONObject();
@@ -164,6 +164,8 @@ public class Services {
 			data.put("description", feedback.getDescription());
 			data.put("feedbackid", feedback.getFeedbackId());
 			data.put("reportid", feedback.getReportId());
+			data.put("operation","done");
+			
 			return data.toString();
 			
 		}
@@ -173,8 +175,21 @@ public class Services {
 			return fail.toString();
 		}
 	}
-}
-	
+
+	public String increasePriority(@FormParam("reportid") int reportId) throws SQLException{
+		boolean updateStatus = ReportModel.increasePriority(reportId);
+		JSONObject returnData = new JSONObject();
+		if(updateStatus){
+			
+			returnData.put("operation", "done");
+			return returnData.toString();
+		}
+		else {
+			returnData.put("operation", "failed");
+			return returnData.toString();
+		}
+	}
+	}
 	
 	/*
 	@SuppressWarnings("unchecked")
